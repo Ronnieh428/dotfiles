@@ -1,0 +1,15 @@
+#ignore everything
+*
+*.*
+**
+.*
+
+#exceptions
+!.gitignore
+!.git/**
+!.config/
+!.config/i3/
+!.config/i3/**
+!.zshrc
+!.ssh/
+!.ssh/authorized_keys
