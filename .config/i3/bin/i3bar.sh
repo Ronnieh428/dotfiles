@@ -50,11 +50,11 @@ launch_bar() {
 		fi
 		touch "$MFILE"
 	fi
-
-	if [[ ! `pidof polybar` ]]; then
-		polybar -q main -c "$DIR"/config &
-	else
-		polybar-msg cmd restart
+	killall polybar;
+	if type "xrandr"; then
+		for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
+		MONITOR=$m polybar -r --config=~/.config/i3/polybar/config.ini main &
+		done
 	fi
 }
 
