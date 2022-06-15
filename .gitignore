@@ -8,6 +8,8 @@
 !.gitignore
 !.git/**
 !.config/
+!.config/alacritty/
+!.config/alacritty/**
 !.config/i3/
 !.config/i3/**
 !.zshrc
