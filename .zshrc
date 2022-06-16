@@ -1,8 +1,16 @@
+# Get operating system information
+source /etc/os-release
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-ZSH=/usr/share/oh-my-zsh/
+if [[ $ID == "arch" ]]
+then
+    ZSH=/usr/share/oh-my-zsh/
+else
+    ZSH=/home/$USER/.oh-my-zsh/
+fi
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
