@@ -280,6 +280,7 @@ for_window [window_role="task_dialog"] floating enable
 for_window [class="alacritty-float"] floating enable
 for_window [class="Pcmanfm|Onboard|Yad"] floating enable
 for_window [class="Lxappearance|Nitrogen"] floating enable
+assign [class="discord"] 2
 
 # Media player controls
 bindsym XF86AudioPlay exec playerctl play-pause

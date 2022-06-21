@@ -36,3 +36,6 @@ nitrogen --restore &
 
 # Lauch compositor
 ~/.config/i3/bin/i3comp.sh
+
+# Autostart apps
+discord &
