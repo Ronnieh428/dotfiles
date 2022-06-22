@@ -1,4 +1,4 @@
-# Get operating system information
+# Get operating system information.
 source /etc/os-release
 
 # oh-my-zsh installation path.
@@ -12,25 +12,28 @@ fi
 # https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="darkblood"
 
-# oh-my-zsh plugins
+# oh-my-zsh plugins.
 plugins=(git)
 
+# alises.
 alias ipconfig="ip addr"
 alias iwconfig="ip addr"
 
+# Make required files/directories if they do not exist.
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
   mkdir $ZSH_CACHE_DIR
 fi
-
 if [[ ! -f ~/.path ]]; then
   touch ~/.path
 fi
 
+# Sourcing oh-my-zsh, functions, and plugins.
 source $ZSH/oh-my-zsh.sh
 source ~/.zshfunctions
 source ~/.path
 
+# Commands to run at startup
 neofetch
 echo "Updating dotfiles..."
 ( cd ~ ; git pull )
