@@ -6,6 +6,7 @@
 
 #exceptions
 !.gitignore
+!.gitattributes
 !.git/**
 !.config/
 !.config/alacritty/
