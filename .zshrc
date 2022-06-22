@@ -115,50 +115,10 @@ if [[ ! -d $ZSH_CACHE_DIR ]]; then
 fi
 
 source $ZSH/oh-my-zsh.sh
+source ~/.zshfunctions
 
 export PATH=$PATH:$HOME/dotnet
 export DOTNET_ROOT=$HOME/dotnet
-
-which_window(){
-    xprop;
-}
-
-test_app() {
-    if [ -z "$@" ]
-    then echo "please specify an app to test"
-    else sudo pacman -S --noconfirm $@ && $@ ; sudo pacman -R --noconfirm $@
-    fi
-}
-
-which_term(){
-    term=$(ps -p $(ps -p $$ -o ppid=) -o args=);
-    found=0;
-    case $term in
-        *gnome-terminal*)
-            found=1
-            echo "gnome-terminal"
-            ;;
-        *lxterminal*)
-            found=1
-            echo "lxterminal"
-            ;;
-        rxvt*)
-            found=1
-            echo "rxvt"
-            ;;
-        ## Try and guess for any others
-        *)
-            for v in '-version' '--version' '-V' '-v'
-            do
-                $term "$v" &>/dev/null && eval $term $v && found=1 && break
-            done
-            ;;
-    esac
-    ## If none of the version arguments worked, try and get the 
-    ## package version
-    [ $found -eq 0 ] && echo "$term "    
-}
-
 export JAVA_HOME=/usr/java/jdk-18.0.1/bin/java
 export PATH=$PATH:/usr/java/jdk-18.0.1/bin
 export PATH=/usr/bin:$PATH
