@@ -114,6 +114,10 @@ if [[ ! -d $ZSH_CACHE_DIR ]]; then
   mkdir $ZSH_CACHE_DIR
 fi
 
+if [[ ! -f ~/.path ]]; then
+  touch ~/.path
+fi
+
 source $ZSH/oh-my-zsh.sh
 source ~/.zshfunctions
 source ~/.path
