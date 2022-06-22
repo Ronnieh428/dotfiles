@@ -116,14 +116,7 @@ fi
 
 source $ZSH/oh-my-zsh.sh
 source ~/.zshfunctions
-
-export PATH=$PATH:$HOME/dotnet
-export DOTNET_ROOT=$HOME/dotnet
-export JAVA_HOME=/usr/java/jdk-18.0.1/bin/java
-export PATH=$PATH:/usr/java/jdk-18.0.1/bin
-export PATH=/usr/bin:$PATH
-export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
-export PATH=$PATH:/home/notarin/.local/bin
+source ~/.path
 
 neofetch
 echo "Updating dotfiles..."
