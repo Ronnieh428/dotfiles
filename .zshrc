@@ -166,6 +166,8 @@ export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
 export PATH=$PATH:/home/notarin/.local/bin
 
 neofetch
+echo "Updating dotfiles..."
+( cd ~ ; git pull )
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 
 if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
