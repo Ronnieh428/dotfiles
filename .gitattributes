@@ -1,2 +1,2 @@
-**/*.yaml linguist-vendored
-**/*.yml linguist-vendored
+*.yaml linguist-vendored
+*.yml linguist-vendored
