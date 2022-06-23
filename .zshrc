@@ -34,7 +34,7 @@ source $ZSH/oh-my-zsh.sh
 source ~/.zshfunctions
 source ~/.path
 
-# Commands to run at startup
+# Commands to run at startup.
 neofetch
 echo "Updating dotfiles..."
 ( cd ~ ; git pull )
