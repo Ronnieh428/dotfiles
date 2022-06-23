@@ -37,8 +37,3 @@ source ~/.path
 neofetch
 echo "Updating dotfiles..."
 ( cd ~ ; git pull )
-fpath+=${ZDOTDIR:-~}/.zsh_functions
-
-if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
-        source /etc/profile.d/vte.sh
-fi
