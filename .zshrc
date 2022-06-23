@@ -18,6 +18,7 @@ plugins=(git)
 # alises.
 alias ipconfig="ip addr"
 alias iwconfig="ip addr"
+alias which_window="xprop"
 
 # Make required files/directories if they do not exist.
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh

@@ -1,7 +1,3 @@
-which_window(){
-    xprop;
-}
-
 test_app() {
     if [ -z "$@" ]
     then echo "please specify an app to test"
