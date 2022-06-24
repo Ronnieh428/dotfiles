@@ -13,6 +13,8 @@
 !.config/alacritty/**
 !.config/i3/
 !.config/i3/**
+!.config/btop/
+!.config/btop/**
 !.zshrc
 !.zshfunctions
 !.ssh/
