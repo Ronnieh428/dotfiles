@@ -37,3 +37,13 @@ which_term(){
 var() {
     var="$*"
 }
+
+function nano () {
+  if [ ! -f "${@: -1}" ] || [ -w "${@: -1}" ]; then
+    /bin/nano "$@"
+  else
+   echo "Write permission is NOT granted on ${@: -1}"
+   echo "Escalating privileges..."
+   sudo /bin/nano "$@"
+  fi
+}
