@@ -38,7 +38,7 @@ var() {
     var="$*"
 }
 
-function nano () {
+nano () {
   if [ ! -f "${@: -1}" ] || [ -w "${@: -1}" ]; then
     /bin/nano "$@"
   else
