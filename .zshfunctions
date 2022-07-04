@@ -47,3 +47,11 @@ nano () {
    sudo /bin/nano "$@"
   fi
 }
+
+lad () {
+    nohup "$@" >/dev/null 2>&1
+}
+
+sulad () {
+    nohup sudo "$@" >/dev/null 2>&1
+}
