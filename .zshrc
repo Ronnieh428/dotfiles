@@ -13,12 +13,14 @@ fi
 ZSH_THEME="darkblood"
 
 # oh-my-zsh plugins.
-plugins=(git)
+plugins=()
 
 # alises.
 alias ipconfig="ip addr"
 alias iwconfig="ip addr"
 alias which_window="xprop"
+alias ls="exa"
+alias l="exa --long"
 
 # Make required files/directories if they do not exist.
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
