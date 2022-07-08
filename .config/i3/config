@@ -268,9 +268,5 @@ for_window [class="Lxappearance|Nitrogen"] floating enable
 assign [class="discord"] 2
 
 # User defined keybinds
-#bindsym $mod exec ~/.config/openbox/rofi/bin/launcher
-#bindsym $mod+Shift+p exec ~/Scripts/polybar/launch.sh
-#bindsym $mod+Shift+s exec scrot -s \'/home/notarin/Pictures/Screenshots/%F_%T_$wx$h.png\' -e \'xclip -selection clipboard -target image/png -i $f\'
 bindsym $mod+$alt+Left move workspace to output left
 bindsym $mod+$alt+Right move workspace to output right
-#bindsym $mod+d exec "~/.config/openbox/rofi/bin/launcher"
