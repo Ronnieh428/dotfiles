@@ -267,6 +267,6 @@ for_window [class="Pcmanfm|Onboard|Yad"] floating enable
 for_window [class="Lxappearance|Nitrogen"] floating enable
 assign [class="discord"] 2
 
-# User defined keybinds
+# Moving workspaces to adjacent windows
 bindsym $mod+$alt+Left move workspace to output left
 bindsym $mod+$alt+Right move workspace to output right
