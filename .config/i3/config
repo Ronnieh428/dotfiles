@@ -50,7 +50,6 @@ exec_always --no-startup-id 	~/.config/i3/bin/autostart.sh
 
 # -- Terminal --
 bindsym $mod+Return 			exec --no-startup-id ~/.config/i3/bin/i3term.sh
-bindsym $mod+Shift+Return 		exec --no-startup-id ~/.config/i3/bin/i3term.sh -f
 
 # -- Apps --
 bindsym $mod+Shift+f 			exec --no-startup-id thunar
