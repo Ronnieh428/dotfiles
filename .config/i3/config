@@ -49,7 +49,7 @@ exec_always --no-startup-id 	~/.config/i3/bin/autostart.sh
 ##-- Key Bindings ------------------------
 
 # -- Terminal --
-bindsym $mod+Return 			exec --no-startup-id ~/.config/i3/bin/i3term.sh
+bindsym $mod+Return 			exec --no-startup-id kitty
 
 # -- Apps --
 bindsym $mod+Shift+f 			exec --no-startup-id thunar
