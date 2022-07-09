@@ -40,6 +40,7 @@ alias hex="hexyl"
 alias cat="bat"
 alias bat="bat -p"
 alias calc="eva"
+alias cp="xcp"
 
 # Commands to run at startup.
 neofetch
