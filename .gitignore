@@ -9,13 +9,10 @@
 !.gitattributes
 !.git/**
 !.config/
-!.config/alacritty/
-!.config/alacritty/**
+!.config/alacritty**
 !.config/kitty**
-!.config/i3/
-!.config/i3/**
-!.config/btop/
-!.config/btop/**
+!.config/i3**
+!.config/btop**
 !.zshrc
 !.zshfunctions
 !.ssh/
