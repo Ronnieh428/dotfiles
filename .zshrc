@@ -15,13 +15,6 @@ ZSH_THEME="darkblood"
 # oh-my-zsh plugins.
 plugins=()
 
-# alises.
-alias ipconfig="ip addr"
-alias iwconfig="ip addr"
-alias which_window="xprop"
-alias ls="exa"
-alias l="exa --long"
-
 # Make required files/directories if they do not exist.
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
@@ -35,6 +28,13 @@ fi
 source $ZSH/oh-my-zsh.sh
 source ~/.zshfunctions
 source ~/.path
+
+# alises.
+alias ipconfig="ip addr"
+alias iwconfig="ip addr"
+alias which_window="xprop"
+alias ls="exa"
+alias l="exa --long"
 
 # Commands to run at startup.
 neofetch
