@@ -35,6 +35,11 @@ alias iwconfig="ip addr"
 alias which_window="xprop"
 alias ls="exa"
 alias l="exa --long"
+alias img="viu"
+alias hex="hexyl"
+alias cat="bat"
+alias bat="bat -p"
+alias calc="eva"
 
 # Commands to run at startup.
 neofetch
