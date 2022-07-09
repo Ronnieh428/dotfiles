@@ -23,11 +23,15 @@ fi
 if [[ ! -f ~/.path ]]; then
   touch ~/.path
 fi
+if [[ ! -f ~/.localrc ]]; then
+  touch ~/.localrc
+fi
 
 # Sourcing oh-my-zsh, functions, and plugins.
 source $ZSH/oh-my-zsh.sh
 source ~/.zshfunctions
 source ~/.path
+source ~/.localrc
 
 # alises.
 alias ipconfig="ip addr"
