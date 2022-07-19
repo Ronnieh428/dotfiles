@@ -46,6 +46,7 @@ alias cat="bat --style=full --pager=never"
 alias bat="bat --pager=never -p"
 alias calc="eva"
 alias cp="xcp"
+alias kssh="kitty +kitten ssh"
 
 # Commands to run at startup.
 neofetch
