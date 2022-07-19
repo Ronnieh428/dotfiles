@@ -12,7 +12,7 @@
 !.config/alacritty**
 !.config/kitty**
 !.config/i3**
-!.config/btop**
+!.config/btop/btop.conf
 !.zshrc
 !.zshfunctions
 !.ssh/
