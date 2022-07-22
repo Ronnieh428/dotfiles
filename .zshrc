@@ -2,12 +2,7 @@
 source /etc/os-release
 
 # oh-my-zsh installation path.
-if [[ $ID == "arch" ]]
-then
-    ZSH=/usr/share/oh-my-zsh/
-else
-    ZSH=/home/$USER/.oh-my-zsh/
-fi
+ZSH=/home/$USER/.oh-my-zsh/
 
 # https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="darkblood"
