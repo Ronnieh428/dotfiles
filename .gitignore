@@ -13,6 +13,7 @@
 !.config/kitty**
 !.config/i3**
 !.config/btop/btop.conf
+!.config/neofetch**
 !.zshrc
 !.zshfunctions
 !.ssh/
