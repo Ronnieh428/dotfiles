@@ -42,6 +42,7 @@ alias bat="bat --pager=never -p"
 alias calc="eva"
 alias cp="xcp"
 alias kssh="kitty +kitten ssh"
+alias insomz="sh -c \"$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)\""
 
 # Commands to run at startup.
 neofetch
