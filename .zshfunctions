@@ -55,3 +55,7 @@ lad () {
 sulad () {
     nohup sudo "$@" >/dev/null 2>&1
 }
+
+insomz () {
+    sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+}
